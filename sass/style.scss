@@ -1,0 +1,89 @@
+@import '_nav';
+
+// variable - must be at top
+$blueColor: #b4defa;
+$margin: 10px;
+$mediumScreen: 400px;
+
+
+
+body {
+    background-color: $blueColor;
+}
+
+.paragraph {
+    color: darken($blueColor, 30%);
+}
+
+// a:hover {
+//     color: complement($blueColor);
+// }
+
+a {
+    &:hover {
+        color: complement($blueColor);
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+.class1 {
+    &class2 {
+        min-height: 10px;
+    }
+}
+
+
+// Nesting
+.card {
+    background-color: white;
+    border: 2px solid $blueColor;
+
+
+    .cardBody{
+        color: $blueColor;
+        text-align: right;
+
+        .cardTitle {
+            font-style: 2em;
+
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+}
+
+
+// Mixins
+
+// .div1 {
+//     border: 10px solid black;
+//     float: left;
+//     text-align: center;
+//     color: red;
+// }
+//
+// .div2 {
+//     border: 10px solid black;
+//     float: left;
+//     text-align: center;
+//     color: blue;
+// }
+
+@mixin divStyle {
+    border: 10px solid black;
+    float: left;
+    text-align: center;
+}
+
+.div1 {
+    @include divStyle;
+    color: red;
+}
+
+.div2 {
+    @include divStyle;
+    color: blue;
+}

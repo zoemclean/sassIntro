@@ -1,0 +1,59 @@
+nav {
+  color: red;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  float: right;
+}
+
+body {
+  background-color: #b4defa;
+}
+
+.paragraph {
+  color: #259ff0;
+}
+
+a:hover {
+  color: #fad0b4;
+}
+a::after {
+  clear: both;
+}
+
+.class1class2 {
+  min-height: 10px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #b4defa;
+}
+.card .cardBody {
+  color: #b4defa;
+  text-align: right;
+}
+.card .cardBody .cardTitle {
+  font-style: 2em;
+}
+.card .cardBody .cardTitle img {
+  max-width: 50px;
+}
+
+.div1 {
+  border: 10px solid black;
+  float: left;
+  text-align: center;
+  color: red;
+}
+
+.div2 {
+  border: 10px solid black;
+  float: left;
+  text-align: center;
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
