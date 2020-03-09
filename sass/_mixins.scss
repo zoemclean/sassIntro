@@ -1,0 +1,13 @@
+// @mixin clear {
+//     &::after {
+//         clear: both;
+//         display: block;
+//         content: '';
+//     }
+// }
+
+@mixin divStyle {
+    border: 10px solid black;
+    float: left;
+    text-align: center;
+}
